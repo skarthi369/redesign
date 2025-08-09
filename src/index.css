@@ -1,103 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Love Movie Theme - Pink/Violet Romance Aesthetic
+Perfect for romantic movie sites
 */
+*{
+  font-family: 'Quicksand', sans-serif;
+}
 
 @layer base {
   :root {
-    --background: 222 47% 6%;
-    --foreground: 210 40% 96%;
+    /* Romantic Pink-Violet Love Theme */
+    --background: 320 45% 92%; /* Soft pink-violet background */
+    --foreground: 330 20% 15%; /* Dark text for readability */
 
-    --card: 222 40% 10%;
-    --card-foreground: 210 40% 96%;
+    --card: 320 30% 96%; /* Very light pink cards */
+    --card-foreground: 330 20% 15%;
 
-    --popover: 222 40% 10%;
-    --popover-foreground: 210 40% 96%;
+    --popover: 320 30% 96%;
+    --popover-foreground: 330 20% 15%;
 
-    --primary: 42 94% 55%; /* brand gold */
-    --primary-foreground: 222 47% 6%;
+    /* Primary using enhanced version of your color */
+    --primary: 310 65% 55%; /* Beautiful vibrant pink-violet */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 14% 20%;
-    --secondary-foreground: 210 40% 96%;
+    --secondary: 320 25% 88%; /* Soft pink-gray */
+    --secondary-foreground: 330 20% 25%;
 
-    --muted: 220 14% 20%;
-    --muted-foreground: 215 20% 70%;
+    --muted: 320 20% 90%;
+    --muted-foreground: 330 15% 50%;
 
-    --accent: 262 83% 58%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 340 50% 88%; /* Romantic pink accent */
+    --accent-foreground: 330 30% 20%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 65% 58%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 14% 25%;
-    --input: 220 14% 25%;
-    --ring: 42 94% 55%;
+    --border: 320 25% 85%; /* Soft pink borders */
+    --input: 320 25% 85%;
+    --ring: 310 65% 55%; /* Focus ring matches primary */
 
-    --radius: 0.625rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 222 47% 6%;
-    --sidebar-foreground: 210 40% 96%;
-    --sidebar-primary: 42 94% 55%;
-    --sidebar-primary-foreground: 222 47% 6%;
-    --sidebar-accent: 220 14% 20%;
-    --sidebar-accent-foreground: 210 40% 96%;
-    --sidebar-border: 220 14% 25%;
-    --sidebar-ring: 42 94% 55%;
-
-    /* Brand tokens */
-    --brand: 42 94% 55%;
-    --brand-contrast: 222 47% 6%;
-
-    /* Gradients */
-    --primary-glow: 42 94% 65%;
-    --hero-start: 42 94% 55%;
-    --hero-end: 262 83% 58%;
-    --hero-contrast: 222 47% 6%;
-
-    /* Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--brand) / 0.35);
-    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-background: 320 45% 92%;
+    --sidebar-foreground: 330 20% 15%;
+    --sidebar-primary: 310 65% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 320 30% 96%;
+    --sidebar-accent-foreground: 330 20% 15%;
+    --sidebar-border: 320 25% 85%;
+    --sidebar-ring: 310 65% 55%;
+
+    /* Brand tokens for movie theme */
+    --brand: 310 65% 55%; /* Main brand color */
+    --brand-contrast: 0 0% 100%;
+
+    --header: 320 30% 96%; /* Light header */
+
+    /* Movie-themed gradients */
+    --hero-start: 310 65% 55%; /* Vibrant pink-violet */
+    --hero-end: 340 50% 65%;   /* Romantic pink */
+    --hero-contrast: 0 0% 100%;
+
+    /* Romantic shadows */
+    --shadow-elegant: 0 6px 20px hsl(310 65% 55% / 0.15);
+    --shadow-glow: 0 0 20px hsl(310 65% 55% / 0.25);
   }
 }
 
@@ -107,39 +77,149 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-body antialiased;
+    @apply bg-background text-foreground antialiased;
+    /* Clean romantic background */
+    background-image: 
+      radial-gradient(600px 300px at 80% 20%, hsl(340 50% 88% / 0.4), transparent),
+      radial-gradient(400px 200px at 20% 80%, hsl(310 45% 85% / 0.3), transparent);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0.01em;
+    color: hsl(var(--brand));
   }
 }
 
-/* Utilities tied to design tokens */
+/* Love Movie Components */
 @layer components {
   .bg-hero {
-    background-image: radial-gradient(1200px 600px at var(--mx,50%) var(--my,50%), hsl(var(--brand)/0.25), transparent 60%), linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%);
+    background: linear-gradient(135deg, hsl(var(--hero-start) / 0.1), hsl(var(--hero-end) / 0.08));
   }
+
   .text-gradient {
     background: linear-gradient(135deg, hsl(var(--hero-start)), hsl(var(--hero-end)));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-weight: 600;
   }
+
   .glass-card {
-    @apply bg-card/60 backdrop-blur-md border border-border/60 shadow;
+    @apply bg-card/70 backdrop-blur-md border border-border/40;
+    box-shadow: 0 4px 15px hsl(310 40% 70% / 0.1);
   }
+
   .story-link {
     position: relative;
     display: inline-block;
+    color: hsl(var(--brand));
+    font-weight: 500;
   }
+
   .story-link::after {
     content: "";
     position: absolute;
-    left: 0; bottom: 0;
+    left: 0; bottom: -2px;
     width: 100%; height: 2px;
     background: hsl(var(--brand));
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 300ms ease;
   }
-  .story-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
-  .hover-scale { transition: transform 200ms ease; }
-  .hover-scale:hover { transform: translateY(-1px) scale(1.02); }
+
+  .story-link:hover::after { 
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+  }
+
+  .hover-scale { 
+    transition: transform 300ms ease, box-shadow 300ms ease; 
+  }
+
+  .hover-scale:hover { 
+    transform: translateY(-2px) scale(1.01); 
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  /* Love movie cards */
+  .love-card {
+    @apply rounded-lg bg-card/90 backdrop-blur-sm border border-border/30 overflow-hidden;
+    box-shadow: 0 4px 15px hsl(310 40% 70% / 0.12);
+    transition: transform 300ms ease, box-shadow 300ms ease;
+  }
+
+  .love-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px hsl(310 50% 60% / 0.2);
+  }
+
+  .love-icon {
+    @apply text-primary/90;
+    filter: drop-shadow(0 2px 4px hsl(310 50% 70% / 0.3));
+  }
+
+  .heart-pulse {
+    animation: heartbeat 2s ease-in-out infinite;
+  }
+
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  
+  /* Movie button */
+  .btn-movie {
+    background: hsl(var(--brand));
+    color: hsl(var(--brand-contrast));
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    font-weight: 500;
+    box-shadow: 0 3px 12px hsl(310 50% 60% / 0.25);
+    transition: all 300ms ease;
+    border: none;
+  }
+
+  .btn-movie:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-elegant);
+    background: hsl(310 65% 50%);
+  }
+  
+  /* Cinema typography */
+  .cinema-title {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, hsl(var(--brand)), hsl(340 50% 65%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .film-subtitle {
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    color: hsl(var(--muted-foreground));
+  }
+  
+  .director-note {
+    font-style: italic;
+    color: hsl(var(--brand));
+  }
+
+  /* Movie genre tags */
+  .genre-tag {
+    background: hsl(var(--brand) / 0.1);
+    color: hsl(var(--brand));
+    border: 1px solid hsl(var(--brand) / 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  /* Rating stars */
+  .star-rating {
+    color: hsl(45 100% 60%);
+    filter: drop-shadow(0 1px 2px hsl(310 40% 40% / 0.3));
+  }
 }

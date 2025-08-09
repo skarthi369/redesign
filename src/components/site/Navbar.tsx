@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="md:hidden border-t border-border/60">
           <div className="container py-3 flex flex-col gap-3">
             <Link to={toHash('about')} onClick={()=>setOpen(false)}>About</Link>
-            <Link to={toHash('projects')} onClick={()=>setOpen(false)}>Projects</Link>
+            {/* <Link to={toHash('projects')} onClick={()=>setOpen(false)}>Projects</Link> */}
             {/* <Link to={toHash('testimonials')} onClick={()=>setOpen(false)}>Testimonials</Link> */}
             {/* <Link to={toHash('music')} onClick={()=>setOpen(false)}>Music</Link> */}
             {navItems.map((n) => (

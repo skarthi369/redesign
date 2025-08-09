@@ -38,7 +38,7 @@ const About = () => {
       </div>
 
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-1 gap-16 items-center">
           {/* Content Section */}
           <div className="space-y-8">
             <div className="space-y-4">
@@ -79,7 +79,7 @@ const About = () => {
           </div>
 
           {/* Stats Section */}
-          <div className="relative">
+          {/* <div className="relative">
             <div className="love-card p-8 md:p-10">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-semibold text-gradient mb-2">Our Journey</h3>
@@ -109,16 +109,14 @@ const About = () => {
                 ))}
               </div>
 
-              {/* Decorative element */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-xl"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-tr from-accent/15 to-primary/15 rounded-full blur-2xl"></div>
             </div>
 
-            {/* Floating heart */}
             <div className="absolute -top-6 -right-6 text-primary/30 text-4xl heart-pulse">
               ♥
             </div>
-          </div>
+          </div> */}
         </div>
 
       </div>

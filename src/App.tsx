@@ -12,12 +12,14 @@ import ProjectPage from "./pages/Project";
 import BlogPage from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPost";
 import ContactPage from "./pages/Contact";
+import CursorFollower from "./components/site/CursorFollower";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <CursorFollower />
       <Toaster />
       <Sonner />
       <Navbar />
